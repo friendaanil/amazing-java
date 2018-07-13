@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<!--
+   <script src="math.js"></script>
+   <script src="neuralNetwork.js"></script> -->
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.sound.min.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"> </script>
+
+  <script src="tensors_main.js"></script>
+  <script src="tensors_sketch.js"></script>
+
+
+  <style>
+    h2{color : rebeccapurple}
+  </style>
+
+  </head>
+
+
+  <body>
+
+
+
+<input type = "hidden" id = "red" value = ""/>
+<input type = "hidden" id = "green" value = ""/>
+<input type = "hidden" id = "blue" value = ""/>
+
+<br/>
+
+
+<!-- <div class="container">
+  <div class="col-md-4">
+  <button id ="predict" class = "btn btn-primary" value = "predict">Predict</button>
+  <button id ="change_color" class = "btn btn-primary" value = "change color">Change Color</button>
+</div>
+
+ <div id = "sketch_holder" class="col-md-4">hello</div>
+</div> -->
+
+<div class="container">
+  <div class="row">
+     <div class="col-12">
+     <h2> Color Classifier </h2>
+   </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+    <button id ="predict" class = "btn btn-primary" value = "predict">Predict</button>
+      <button id ="change_color" class = "btn btn-primary" value = "change color">Change Color</button>
+        <!-- <button id ="train_model" class = "btn btn-primary" value = "train_model">Train Model</button> -->
+
+
+
+<button type="button" class="btn btn-primary" id="train_model" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Training...">Train Model</button>
+
+
+
+    </div>
+    <div id = "sketch_holder" class="col-8">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+   <div class="row">
+      <div class="col-7 ">
+  <div class="alert alert-primary" role="alert">
+      The color is :
+  </div>
+</div>
+</div>
+</div>
+<!-- <input id="json-upload" type="file" />
+<input id="weights-upload" type="file" /> -->
+
+
+  </body>
+
+</html>
