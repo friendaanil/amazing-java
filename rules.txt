@@ -1,0 +1,7 @@
+age >= 18 and income >= 15000 and property = 1 ---- house construction loan
+age >= 18 and age < 60 and income <= 15000 and property = 1 ---- house construction grant
+age >= 60 and income >= 15000 and property = 1 ---- house construction grant
+age >= 18 and income < 15000 and property = 0 ---- house grant
+age >= 18 and income < 5000 and property = 0 ---- land grant
+
+
